@@ -1,0 +1,124 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+form,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav {
+  text-align: center;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  padding-right: 0;
+  width: 90%;
+}
+
+aside {
+  flex-basis: 25%;
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+aside li {
+  margin-bottom: 10px;
+}
+
+section {
+  flex-basis: 63%;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.myLinkClass1 {
+  text-decoration: none;
+  color: white;
+}
+.myLinkClass2 {
+  text-decoration: none;
+  color: black;
+}
+
+.myLinkClass1.active, .myLinkClass2.active {
+  color: yellow; 
+  text-decoration: underline;
+}
+
+#myH1Id {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+#myArticleId {
+  background-color: white;
+}
