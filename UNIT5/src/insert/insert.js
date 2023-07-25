@@ -1,19 +1,5 @@
 window.onload = function () {
 
-  // // Toggle menu links and log to console when clicked
-  // var menuLinks = document.querySelectorAll("nav a, aside li a");
-  // menuLinks.forEach(function (link) {
-  //   link.addEventListener("click", function (e) {
-  //     e.preventDefault();
-  //     this.classList.toggle("active");
-  //     console.log(
-  //       this.textContent +
-  //         " is " +
-  //         (this.classList.contains("active") ? "active" : "inactive")
-  //     );
-  //   });
-  // });
-
   // Handle form submission
   document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault();
@@ -37,10 +23,8 @@ window.onload = function () {
 
       localStorage.setItem("bookInfo", JSON.stringify(bookInfoArray));
 
-      // Show alert
       alert("BookInfo submitted successfully!");
-
-      // Clear form input fields
+      
       bookName.value = "";
       author.value = "";
       publisher.value = "";
